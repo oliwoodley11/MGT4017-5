@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ski Trace – Find Your Skis Anywhere</title>
+<meta name="description" content="Ski Trace smart trackers help you find your skis quickly, so you can spend more time on the slopes.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#home" aria-label="Ski Trace home">
+    <svg viewBox="0 0 64 40" width="44" height="28" aria-hidden="true"><path d="M2 38 22 8l9 13 6-8 25 25z" fill="none" stroke="#3fb4ff" stroke-width="3" stroke-linejoin="round"/></svg>
+    <span>Ski Trace</span>
+  </a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  <nav class="main-nav" aria-label="Main">
+    <a href="#home" class="active">Home</a>
+    <a href="#products">Our products</a>
+    <a href="#how">Finding your skis</a>
+    <a href="#sustainability">Sustainability</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-icons">
+    <a href="#products" class="icon-btn" aria-label="Cart">&#128722;<span id="cart-count" class="cart-count" hidden>0</span></a>
+    <a href="#" class="icon-btn" aria-label="Search">&#128269;</a>
+  </div>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <svg class="hero-mountains" viewBox="0 0 1200 400" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b2a55"/><stop offset="1" stop-color="#2f6aa8"/></linearGradient>
+        <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9f4ff"/><stop offset="1" stop-color="#7fb2e0"/></linearGradient>
+      </defs>
+      <rect width="1200" height="400" fill="url(#sky)"/>
+      <polygon points="300,400 520,120 600,200 700,70 860,260 960,150 1200,400" fill="#3a6ea5"/>
+      <polygon points="150,400 380,170 470,260 640,100 800,300 1000,200 1200,360 1200,400" fill="url(#snow)" opacity=".85"/>
+      <polygon points="0,400 0,330 200,260 420,330 700,290 1000,340 1200,300 1200,400" fill="#f4faff"/>
+    </svg>
+    <div class="hero-copy">
+      <h1>Welcome to <span>Ski Trace</span></h1>
+      <p class="tagline">Never lose your skis again.</p>
+      <p>Our smart tracker helps you find your skis quickly, so you can spend more time on the slopes.</p>
+      <div class="hero-actions">
+        <a class="btn btn-orange" href="#products">Explore our products &rarr;</a>
+        <a class="btn btn-outline" href="#how">Learn more</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="pin"><svg viewBox="0 0 40 56" width="56" height="78"><path d="M20 2C10 2 2 10 2 20c0 14 18 34 18 34s18-20 18-34C38 10 30 2 20 2z" fill="#2aa8ff"/><circle cx="20" cy="20" r="7" fill="#eaf6ff"/></svg></div>
+      <div class="ski ski-1"></div>
+      <div class="ski ski-2"></div>
+    </div>
+  </section>
+
+  <section id="products" class="section">
+    <div class="section-head">
+      <span class="head-icon" aria-hidden="true">&#128717;</span>
+      <div><h2>Our Products</h2><p>Find the right Ski Trace tracker for your needs.</p></div>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="card-media"><div class="device"><i class="ring"></i><small>Ski Trace</small></div></div>
+        <h3>Ski Trace Lite</h3>
+        <p>Compact and lightweight. Perfect for casual skiers who want peace of mind.</p>
+        <ul class="ticks"><li>Real-time location</li><li>Long battery life (up to 7 days)</li><li>Easy to attach</li></ul>
+        <div class="card-foot"><span class="price">£99</span><button class="btn btn-orange add-to-cart" data-name="Ski Trace Lite">Add to cart &rarr;</button></div>
+      </article>
+      <article class="card featured">
+        <span class="badge">Most Popular</span>
+        <div class="card-media"><div class="watch"><div class="screen"><span class="mini-pin">&#9679;</span><b>Found!</b></div></div></div>
+        <h3>Ski Trace Pro</h3>
+        <p>Advanced tracking with smart alerts and precise location.</p>
+        <ul class="ticks"><li>GPS + real-time updates</li><li>Geo-fencing alerts</li><li>Long battery life (up to 14 days)</li></ul>
+        <div class="card-foot"><span class="price">£199</span><button class="btn btn-orange add-to-cart" data-name="Ski Trace Pro">Add to cart &rarr;</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media"><div class="device"><i class="ring"></i><small>Ski Trace</small><em class="clip"></em></div></div>
+        <h3>Ski Trace Connect</h3>
+        <p>Our most advanced tracker. Maximum accuracy for total peace of mind.</p>
+        <ul class="ticks"><li>Ultra-precise GPS</li><li>Mobile app integration</li><li>Extended battery (up to 30 days)</li></ul>
+        <div class="card-foot"><span class="price">£299</span><button class="btn btn-orange add-to-cart" data-name="Ski Trace Connect">Add to cart &rarr;</button></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="how" class="section how">
+    <div class="how-text">
+      <div class="section-head">
+        <span class="head-icon" aria-hidden="true">&#128269;</span>
+        <div><h2>How It Works</h2><p>Find your skis in just 3 simple steps.</p></div>
+      </div>
+      <ol class="steps">
+        <li><span class="num">1</span><svg viewBox="0 0 64 40" width="56" height="36" aria-hidden="true"><path d="M2 38 22 8l9 13 6-8 25 25z" fill="none" stroke="#3fb4ff" stroke-width="3" stroke-linejoin="round"/></svg><h3>Attach</h3><p>Clip your Ski Trace tracker to your skis.</p></li>
+        <li class="arrow" aria-hidden="true">&rarr;</li>
+        <li><span class="num">2</span><span class="step-icon" aria-hidden="true">&#128241;</span><h3>Track</h3><p>Use the app to monitor your skis in real-time.</p></li>
+        <li class="arrow" aria-hidden="true">&rarr;</li>
+        <li><span class="num">3</span><span class="step-icon" aria-hidden="true">&#10004;</span><h3>Find</h3><p>Get instant alerts if your skis are lost.</p></li>
+      </ol>
+    </div>
+    <div class="phone-art" aria-hidden="true">
+      <div class="phone"><div class="map"><span class="map-pin"></span></div></div>
+    </div>
+  </section>
+
+  <section id="sustainability" class="section sustain">
+    <div class="sustain-text">
+      <div class="section-head">
+        <span class="head-icon green" aria-hidden="true">&#127811;</span>
+        <h2>Sustainability and Ethics</h2>
+      </div>
+      <p>At Ski Trace, we care about the mountains we love. Our trackers are made from recycled materials and come in eco-friendly packaging, helping to reduce our environmental impact. We also support mountain conservation projects to protect the slopes for future generations.</p>
+      <a class="btn btn-green" href="#sustainability">Our sustainability pledge &rarr;</a>
+    </div>
+    <ul class="pillars">
+      <li><span aria-hidden="true">&#9851;</span>Recycled materials</li>
+      <li><span aria-hidden="true">&#127811;</span>Eco-friendly packaging</li>
+      <li><span aria-hidden="true">&#9968;</span>Support for mountain conservation</li>
+    </ul>
+  </section>
+
+  <section id="reviews" class="section reviews">
+    <div class="review-box">
+      <div class="section-head"><span class="head-icon gold" aria-hidden="true">&#9733;</span><h2>What Our Customers Say</h2></div>
+      <blockquote>
+        <span class="quote-mark" aria-hidden="true">&ldquo;</span>
+        <p>Ski Trace saved my day! I lost my skis on a busy slope, and the tracker helped me find them within minutes.</p>
+        <footer>– Sarah M. <span class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></footer>
+      </blockquote>
+    </div>
+    <div class="support-box">
+      <h3>Get Support</h3>
+      <p>Need help? Our team is here for you.</p>
+      <a class="btn btn-outline" href="#contact">Contact support &rarr;</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="section-head">
+      <span class="head-icon" aria-hidden="true">&#9993;</span>
+      <div><h2>Contact Us</h2><p>Have a question or need assistance? We’d love to hear from you.</p></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-item"><h3>Email</h3><a href="mailto:info@skitrace.com">info@skitrace.com</a></div>
+      <div class="contact-item"><h3>Customer Support</h3><p>Get help with your tracker</p><a class="btn btn-outline" href="mailto:info@skitrace.com">Contact support &rarr;</a></div>
+      <div class="contact-item"><h3>Follow Us</h3>
+        <div class="socials"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="TikTok">TT</a><a href="#" aria-label="X">X</a></div>
+      </div>
+      <form class="newsletter" id="newsletter" novalidate>
+        <h3>Join Our Newsletter</h3>
+        <p>Get the latest updates, tips and offers.</p>
+        <div class="nl-row">
+          <label for="email" class="sr-only">Your email address</label>
+          <input id="email" type="email" placeholder="Your email address" required>
+          <button class="btn btn-orange" type="submit">Subscribe</button>
+        </div>
+        <p id="nl-msg" class="nl-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <a class="logo" href="#home"><svg viewBox="0 0 64 40" width="56" height="36" aria-hidden="true"><path d="M2 38 22 8l9 13 6-8 25 25z" fill="none" stroke="#3fb4ff" stroke-width="3" stroke-linejoin="round"/></svg><span>Ski Trace</span></a>
+  <p>&copy; 2026 Ski Trace. First prototype built from the homepage wireframe.</p>
+  <nav aria-label="Footer"><a href="#">Privacy Policy</a><a href="#">Terms and Conditions</a><a href="#contact">Contact</a></nav>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
